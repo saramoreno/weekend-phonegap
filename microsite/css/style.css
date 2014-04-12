@@ -1,0 +1,305 @@
+@font-face {
+    font-family: 'droid_sans_monoregular';
+    src: url('../fonts2/DroidSansMono-webfont.eot');
+    src: url('../fonts2/DroidSansMono-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts2/DroidSansMono-webfont.woff') format('woff'),
+         url('../fonts2/DroidSansMono-webfont.ttf') format('truetype'),
+         url('../fonts2/DroidSansMono-webfont.svg#droid_sans_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoBla';
+    src: url('../fonts2/Lato-Bla.ttf');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoHai';
+    src: url('../fonts2/Lato-Hai.ttf');
+
+    font-weight: thin;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LatoReg';
+    src: url('../fonts2/Lato-Reg.ttf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PassionOne';
+    src: url('../fonts2/PassionOne-Regular.otf');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{margin: 0; padding:0;}
+
+.wrapper, .wrapper-footer {
+	width: 600px;
+	margin: 0 auto;
+}
+
+.wrapper-header {
+	width: 60%;
+	margin: 0 auto;
+	overflow:hidden;
+	padding: 40px 0;
+}
+
+header {
+	text-align: center;
+	overflow: hidden;
+	box-shadow: 0 0 1px #ccc;
+	padding: 40px;
+	background-color: #a50000
+}
+
+header h1 {
+	margin: 10px 0 10px 20px;
+}
+
+header h3 {
+	font-size: 50px;
+	font-family: "LatoHai";
+	font-weight: 100;
+}
+
+header .text {
+	float: left;
+}
+
+header img {
+	float: left;
+	
+}
+
+section {
+	padding: 40px 0;
+}
+
+section img {
+	border-radius: 3px;
+	width: 100%;
+}
+
+.code-box {
+	border: 1px solid #d3d3d3;
+	color: #333;
+	margin: 0 auto;
+	padding: 20px 30px;
+	overflow: hidden;
+	box-shadow: 0 0 1px #ccc;
+	border-radius: 3px;
+}
+
+.code-box-main {
+	overflow:hidden;
+}
+
+.code-box p {
+	padding-left: 25px;
+}
+
+.code-box ol {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.code-box ol li {
+	padding: 1px;
+}
+
+.code-box-footer a {
+	text-decoration: none;
+	color: #ecebe7;
+	font-size: 15px;
+}
+
+.code-box-footer {
+	background: #a50000;
+	padding: 20px 25px;
+	margin: 0 auto;
+	border-radius: 3px;
+}
+
+ul i {
+	color: #a50000;
+	font-size: 9px;
+	padding-right: 10px;
+	position: relative; 
+	bottom: 3px;
+	left: 0;
+}
+
+ul li, ol li {
+	padding-bottom: 20px;
+}
+
+.lists ol li:before {
+	display: inline-block;
+	color: #a50000;
+	font-size: 16px;
+	border: 1px solid #a50000;
+	border-radius: 50%;
+	width: 25px;
+	height: 25px;
+	line-height: 24px;
+	text-align: center;
+	margin-right: 10px;
+}
+
+.lists ol li:nth-child(1):before {
+	content: "1";
+}
+.lists ol li:nth-child(2):before {
+	content:"2";
+}
+.lists ol li:nth-child(3):before {
+	content:"3";
+}
+.lists ol li:nth-child(4):before {
+	content:"4";
+}
+.lists ol li:nth-child(5):before {
+	content:"5";
+}
+
+blockquote p {
+	padding: 0 60px;
+	font-size: 20px;
+}
+
+blockquote p:before {
+	content:"¿?";
+	position: relative; 
+	bottom: 6px;
+	right: 10px;
+	font-size: 42px;
+	color: #a50000;
+	font-weight: bold;
+	font-family: "Passion One";
+}
+
+.warning p:before {
+	content:"!";
+	position: relative; 
+	bottom:1px;
+	right: 10px;
+}
+
+table {
+	box-shadow: 0 0 1px #ccc;
+	width: 100%;
+}
+
+table th {
+	background-color: #a50000;
+	color: #fff;
+	font-weight: 200;
+	font-size: 13px;
+	text-align: left;
+	padding: 10px 15px;
+}
+
+table td {
+	padding: 10px 15px;
+	font-size: 13px;
+}
+
+footer {
+	overflow: hidden;
+	padding: 40px 0;
+	background-color: #a50000;
+}
+
+footer a {
+	color: #fff;
+	text-decoration: none;
+	margin-top: 20px;
+	display: inline-block;
+	float: right;
+}
+
+.wrapper-footer {
+	background: url(../img/redradix.png) no-repeat left center #a50000;
+	overflow: hidden;
+}
+
+/**********COLORS*********/
+
+.red {
+	color: #a50000;
+}
+
+.white {
+	color: #fff;
+}
+
+.bred {
+	background-color:#a50000;
+}
+
+/************FONTS************/
+
+.font-heading {
+	font-family: "Passion One";
+	font-size: 80px;
+}
+
+.font-title {
+	font-family: "Passion One";
+	padding-bottom: 20px;
+}
+
+.sm {
+	font-size: 30px;
+	opacity: .5;
+}
+
+.m {
+	font-size: 40px;
+	opacity: .7;
+}
+
+.xl {
+	font-size: 60px;
+}
+
+.font-normal {
+	font-family: "Lato";
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1.5em;
+}
+
+.font-mono {
+	font-family:'droid_sans_monoregular';
+}
+
+.font-mono-normal {
+	font-family:'droid_sans_monoregular';
+	font-family:'droid_sans_monoregular';
+}
+
+.divider {
+	height: 1px;
+	border-bottom: 1px dashed #ccc;
+}
+
+.divider i {
+	position: relative;
+	top: -10px;
+	left: 100px;
+	color: #a50000;
+	font-size: 23px;
+}

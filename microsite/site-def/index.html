@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Weekend @ Redradix: Phonegap</title>
+<meta  http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta  name="generator" content="Org-mode" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { color: green; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  pre.src-sh:before    { content: 'sh'; }
+  pre.src-bash:before  { content: 'sh'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-R:before     { content: 'R'; }
+  pre.src-perl:before  { content: 'Perl'; }
+  pre.src-java:before  { content: 'Java'; }
+  pre.src-sql:before   { content: 'SQL'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.right  { text-align: center;  }
+  th.left   { text-align: center;   }
+  th.center { text-align: center; }
+  td.right  { text-align: right;  }
+  td.left   { text-align: left;   }
+  td.center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara:nth-child(2) { display: inline; }
+  .footpara { display: block; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="css/font-awesome.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2014 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Weekend @ Redradix: Phonegap</h1>
+<header>
+<div class="wrapper-header">
+<img src="img/phobe-gap.png" alt="phonegap" width="200px" height="200px">
+<div class="text">
+<h3 class="white">Weekend @ Redradix:</h3>
+<h1 class="font-heading white">Phonegap</h1>
+</div>
+</div>
+</header>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> Hello, Phonegap</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> Necesitas:</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>Un ordenador
+</li>
+<li>Entorno de desarrollo (Xcode, ADK)
+</li>
+<li>Dispositivo (o emulador)
+</li>
+<li>Manejarte con JavaScript
+</li>
+<li>node + npm
+</li>
+<li>Paciencia
+</li>
+</ul>
+
+<hr  />
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> Instalacion</h3>
+<div class="outline-text-3" id="text-1-2">
+<div class="org-src-container">
+
+<pre class="src src-bash">$ npm install -g phonegap
+</pre>
+</div>
+
+<p>
+Para echar un vistazo rápido a las opciones prueba con:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">$ phonegap help
+</pre>
+</div>
+
+<p>
+Para explorar un comando en especial:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">$ phonegap help &lt;command&gt;
+</pre>
+</div>
+
+<hr  />
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> Puesta en marcha</h3>
+<div class="outline-text-3" id="text-1-3">
+<p>
+Crear un nuevo proyecto Phonegap es así de fácil:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">$ phonegap create &lt;my-project&gt; <span style="color: #CC9393;">\</span>
+  [path/to/proj <span style="color: #CC9393;">"com.package.app"</span> <span style="color: #CC9393;">"App Name"</span>]
+</pre>
+</div>
+
+<p>
+Echa un vistazo a la carpeta del proyecto:
+</p>
+
+<dl class="org-dl">
+<dt> hooks/ </dt><dd>Scripts que se ejecutan en diferentes momentos del ciclo de desarrollo (pasamos, es demasiado avanzado).
+</dd>
+<dt> merges/ </dt><dd>Mecanismo para sobrescribir ficheros en determinadas plataformas (pasamos).
+</dd>
+<dt> platforms/ </dt><dd>Los proyectos nativos que genera Phonegap.
+</dd>
+<dt> plugins/ </dt><dd>Plugins para este proyecto.
+</dd>
+<dt> www/ </dt><dd>La verdadera chicha: <b>tu código va aquí</b>.
+</dd>
+</dl>
+
+<hr  />
+</div>
+</div>
+<div id="outline-container-sec-1-4" class="outline-3">
+<h3 id="sec-1-4"><span class="section-number-3">1.4</span> Primeros pasos&#xa0;&#xa0;&#xa0;<span class="tag"><span class="practice">practice</span></span></h3>
+<div class="outline-text-3" id="text-1-4">
+<p>
+Vamos a comprobar que <b>todo funciona correctamente</b>.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">$ phonegap local build android
+</pre>
+</div>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">$ phonegap local build ios
+</pre>
+</div>
+
+<p>
+Ahora, <b>conecta tu teléfono</b>&#x2026;
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">$ phonegap local run android
+</pre>
+</div>
+
+<p>
+&#x2026;y disfruta de la demo!
+</p>
+
+<div class="note">
+<p>
+Si estas desarrollando para iOS, tienes que ejecutar el projecto directamente
+desde Xcode.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">$ open platforms/ios/*.xcodeproj
+</pre>
+</div>
+
+</div>
+
+<hr  />
+</div>
+</div>
+<div id="outline-container-sec-1-5" class="outline-3">
+<h3 id="sec-1-5"><span class="section-number-3">1.5</span> ¿Qué está pasando?</h3>
+<div class="outline-text-3" id="text-1-5">
+<p>
+Vamos a ahondar un poco. Abre <code>www/</code> y echa una ojeada.
+</p>
+
+<dl class="org-dl">
+<dt> index.html </dt><dd>Es un fichero HTML normal y corriente&#x2026; nada mágico. ¿Verdad? Fíjate en esta línea:
+</dd>
+</dl>
+
+<div class="org-src-container">
+
+<pre class="src src-html">&lt;<span style="color: #93E0E3;">script</span> <span style="color: #DFAF8F;">type</span>=<span style="color: #CC9393;">"text/javascript"</span> <span style="color: #DFAF8F;">src</span>=<span style="color: #CC9393;">"phonegap.js"</span>&gt;&lt;/<span style="color: #93E0E3;">script</span>&gt;
+</pre>
+</div>
+
+<p>
+¿Dónde está este fichero? ¿Está en <code>www/</code>?
+</p>
+
+<dl class="org-dl">
+<dt> index.js </dt><dd><i>casi</i> un fichero javascript normal. ¿Notas algo extraño?
+</dd>
+</dl>
+
+<hr  />
+</div>
+</div>
+<div id="outline-container-sec-1-6" class="outline-3">
+<h3 id="sec-1-6"><span class="section-number-3">1.6</span> Pero&#x2026; ¿Cómo funciona?</h3>
+<div class="outline-text-3" id="text-1-6">
+<p>
+La idea en la que está basada la tecnología detrás de Phonegap no tiene ningún
+misterio. Todo se basa en generar un proyecto nativo que abre un componente
+<code>WebView</code> (o equivalente) a pantalla completa y navega a un fichero local.
+</p>
+
+<div class="note">
+<p>
+<code>WebView</code> es un componente que está presente, con un nombre más o menos similar,
+en prácticamente todos los SDK móviles. A efectos prácticos, un <code>WebView</code> no es
+más que un navegador sin contoles de navegación que se gestiona desde el código
+de la aplicación y se puede incrustar dentro de aplicaciones nativas.
+</p>
+
+</div>
+
+<p>
+Así que, en el fondo, toda nuestra "app" está construída con el HTML y
+el JavaScript que se ejecuta dentro de una aplicación nativa que Phonegap
+genera automáticamente. Ahora, ¡A experimentar!
+</p>
+
+<hr  />
+</div>
+</div>
+<div id="outline-container-sec-1-7" class="outline-3">
+<h3 id="sec-1-7"><span class="section-number-3">1.7</span> Escríbete un reloj</h3>
+<div class="outline-text-3" id="text-1-7">
+<p>
+Abre tu editor de texto favorito y edita sin remordimiento.
+</p>
+
+<dl class="org-dl">
+<dt> index.html </dt><dd><ol class="org-ol">
+<li>Camibia el encabezado y pon otro mensaje.
+</li>
+<li>Añade la clase <code>js-clock</code> al elemento
+<div class="org-src-container">
+
+<pre class="src src-html">&lt;<span style="color: #93E0E3;">p</span> <span style="color: #DFAF8F;">class</span>=<span style="color: #CC9393;">"event received"</span>&gt;
+</pre>
+</div>
+</li>
+</ol>
+</dd>
+
+<dt> index.js </dt><dd>Aquí tenemos un poco de código&#x2026;
+
+<div class="org-src-container">
+
+<pre class="src src-js"><span style="color: #93E0E3;">initialize</span>: <span style="color: #F0DFAF; font-weight: bold;">function</span>() {
+  <span style="color: #BFEBBF;">this</span>.bindEvents();
+}
+</pre>
+</div>
+
+<p>
+Esta función es llamada desde <code>index.html</code> para poner en marcha el código.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js"><span style="color: #93E0E3;">bindEvents</span>: <span style="color: #F0DFAF; font-weight: bold;">function</span>() {
+  document.addEventListener(<span style="color: #CC9393;">'deviceready'</span>,
+                            <span style="color: #BFEBBF;">this</span>.onDeviceReady,
+                            <span style="color: #BFEBBF;">false</span>);
+}
+</pre>
+</div>
+
+<p>
+Escucha el evento <code>deviceready</code>, que será disparado por Phonegap
+cuando haya cargado todos sus components.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js"><span style="color: #93E0E3;">onDeviceReady</span>: <span style="color: #F0DFAF; font-weight: bold;">function</span>() {
+  <span style="color: #5F7F5F;">// </span><span style="color: #7F9F7F;">a lot of stuff you don't need anymore!</span>
+},
+</pre>
+</div>
+
+<p>
+El código que será ejecutado cuando todo esté cargado y listo.
+<i>Este es nuestro punto de entrada</i>. Edita <code>onDeviceReady</code> para
+implementar un reloj. Muestra la hora dentro de <code>.js-clock</code> y
+refréscala cada segundo. ¡Pruébalo en el dispositivo!
+</p>
+</dd>
+</dl>
+
+<hr  />
+</div>
+</div>
+<div id="outline-container-sec-1-8" class="outline-3">
+<h3 id="sec-1-8"><span class="section-number-3">1.8</span> Y ahora, ¿Qué?</h3>
+<div class="outline-text-3" id="text-1-8">
+<p>
+Ahora puedes&#x2026;
+</p>
+<ol class="org-ol">
+<li>¡Darle estilos al reloj!
+</li>
+<li>Ajustar el formato (los números de un dígito quedan muy feos&#x2026;)
+</li>
+<li>Conviértelo en un cronómetro o un temporizador de pomodoros.
+</li>
+</ol>
+
+<hr  />
+</div>
+</div>
+<div id="outline-container-sec-1-9" class="outline-3">
+<h3 id="sec-1-9"><span class="section-number-3">1.9</span> Espeleología</h3>
+<div class="outline-text-3" id="text-1-9">
+<p>
+Hasta ahora, todo bien. HTML + JavaScript en una especie de navegador a pantalla
+completa. Vale, pero: ¿Cómo cambio el nombre de la aplicación? ¿Cómo le cambio
+el icono, la pantalla de carga, los permisos, etc,&#x2026;?
+</p>
+</div>
+
+<div id="outline-container-sec-1-9-1" class="outline-4">
+<h4 id="sec-1-9-1"><span class="section-number-4">1.9.1</span> Lo que <b>realmente</b> sucede*</h4>
+<div class="outline-text-4" id="text-1-9-1">
+<p>
+Phonegap lee <code>www/config.xml</code> y construye el código del proyecto nativo
+basándose en su contenido. <b>Necesitas</b> editar este fichero para
+configurar los detalles de tu aplicación, como:
+</p>
+
+<dl class="org-dl">
+<dt> name </dt><dd>El nombre de tu app.
+</dd>
+<dt> description, author </dt><dd>Exáctamente lo que parece.
+</dd>
+<dt> feature </dt><dd>APIs de phonegap habilidadas. Más sobre este tema en un rato.
+</dd>
+<dt> preference </dt><dd><table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">nombre</th>
+<th scope="col" class="left">valor</th>
+<th scope="col" class="left">plataforma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">orientation</td>
+<td class="left">default/landscape/portrait</td>
+<td class="left">*</td>
+</tr>
+
+<tr>
+<td class="left">target-device</td>
+<td class="left">handset/tablet/universal</td>
+<td class="left">*</td>
+</tr>
+
+<tr>
+<td class="left">fullscreen</td>
+<td class="left">true/false</td>
+<td class="left">*</td>
+</tr>
+
+<tr>
+<td class="left">webviewbounce</td>
+<td class="left">true/false</td>
+<td class="left">iOS</td>
+</tr>
+</tbody>
+</table>
+</dd>
+
+<dt> plugins </dt><dd>Lista de plugins instalados manualmente. <i>Practicamente obsoleto</i>.
+</dd>
+<dt> icon </dt><dd>Arte de la app. Muchas combinaciones de plataforma/pantalla/densidad.
+</dd>
+<dt> splash </dt><dd>Pantalla de carga. La misma historia.
+</dd>
+<dt> access </dt><dd>A qué dominios puede acceder la aplicación (y cómo).
+</dd>
+</dl>
+
+<hr  />
+
+<p>
+Ahora ve y cambia el icono de la aplicacíón y la pantalla de carga.
+</p>
+
+<hr  />
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-10" class="outline-3">
+<h3 id="sec-1-10"><span class="section-number-3">1.10</span> No tan mágico como parece&#x2026;</h3>
+<div class="outline-text-3" id="text-1-10">
+<p>
+Como ya he dicho, Phonegap genera automáticamente un "proyecto nativo" para
+cada plataforma en la que queramos ejecutar. En cada uno de los directorios de
+esos proyectos (<code>platforms/android/</code>, <code>platforms/ios/</code>) puedes encontrar una
+copia de nuestro directorio <code>www/</code>.
+</p>
+
+<div class="warning">
+<p>
+<b>Nunca</b> toques el código que hay dentro de <code>platforms/</code>.
+</p>
+
+</div>
+</div>
+</div>
+<div id="outline-container-sec-1-11" class="outline-3">
+<h3 id="sec-1-11"><span class="section-number-3">1.11</span> Así que&#x2026; ¿No es más que una web?</h3>
+<div class="outline-text-3" id="text-1-11">
+<p>
+Vuelve a <code>www/</code> y echa un vistazo más a fondo. Hay un montón de cosas, pero no
+todas son igual de importantes.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Fichero</th>
+<th scope="col" class="left">Descripción</th>
+<th scope="col" class="left">¿Útil?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">config.xml</td>
+<td class="left">Configuración de tu app</td>
+<td class="left">* * * * *</td>
+</tr>
+
+<tr>
+<td class="left">index.html</td>
+<td class="left">La página principal</td>
+<td class="left">* * * * *</td>
+</tr>
+
+<tr>
+<td class="left">icon.png</td>
+<td class="left">El icono por defecto</td>
+<td class="left">*</td>
+</tr>
+
+<tr>
+<td class="left">spec.html</td>
+<td class="left">La página principal de <b>test</b></td>
+<td class="left">* *</td>
+</tr>
+
+<tr>
+<td class="left">js/</td>
+<td class="left">El código js del ejemplo</td>
+<td class="left">*</td>
+</tr>
+
+<tr>
+<td class="left">img/</td>
+<td class="left">Las imágenes del ejemplo</td>
+<td class="left">*</td>
+</tr>
+
+<tr>
+<td class="left">res/</td>
+<td class="left">Los <b>recursos</b> por defecto</td>
+<td class="left">*</td>
+</tr>
+
+<tr>
+<td class="left">spec/</td>
+<td class="left">El codigo de <b>test</b> del ejemplo</td>
+<td class="left">* *</td>
+</tr>
+</tbody>
+</table>
+
+<div class="note">
+<p>
+¿Cómo que <i>código de test</i>? Y, ¿Por qué no es muy útil? ¿¿Cómo se
+ejecuta??  El código de tests que incluye el ejemplo de Phonegap está
+pensado para ser ejecutado <b>en el navegador del escritorio</b>
+simplemente abriendo <code>spec.html</code>. En teoría, los test unitarios se
+pueden aislar lo suficiente para no depender del entorno del teléfono.
+En <i>teoría</i>&#x2026;
+</p>
+
+</div>
+
+<hr  />
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2" class="outline-2">
+<h2 id="sec-2"><span class="section-number-2">2</span> ¿Eso es todo? No. Claro que no.</h2>
+<div class="outline-text-2" id="text-2">
+</div><div id="outline-container-sec-2-1" class="outline-3">
+<h3 id="sec-2-1"><span class="section-number-3">2.1</span> Phonegap tiene superpoderes</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Phonegap provee una vía de comunicación entre JavaScript y el
+dispositivo exponiendo funcionalidad nativa mediante APIs. No cubre
+todas las funcionalidades de todos los dispositivos, sino más bien el
+mínimo común denominador. Tiene sentido si el objetivo es desarrollar
+aplicaciones multiplataforma.
+</p>
+</div>
+</div>
+<div id="outline-container-sec-2-2" class="outline-3">
+<h3 id="sec-2-2"><span class="section-number-3">2.2</span> Poder no. 1: <i>Vibracion</i> <code>(org.apache.cordova.vibration)</code></h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Por defecto, Phonegap solo incluye una funcionalidad mínima. Si
+queremos algo más, tenemos que decire qué catacterísticas tiene que
+activar. Cada una de estas caractarísticas está empaquetada en un
+<i>plugin</i>. Para instalar un plugin:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-sh">$ phonegap local pugin add <span style="color: #CC9393;">\</span>
+org.apache.cordova.vibration
+</pre>
+</div>
+
+<p>
+Generalmente, un plugin añade nuevos interfaces a JavaScript para
+utilizar la funcionalidad que provee el plugin.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">navigator.notification.vibrate(time_in_ms);
+</pre>
+</div>
+
+<p>
+Ahora toca experimentar.
+</p>
+<ol class="org-ol">
+<li>Instala el plugin.
+</li>
+<li>Haz que el reloj vibre con cada <i>tick</i> (30ms, por ejemplo).
+</li>
+<li>¡Testealo en el dispositivo!
+</li>
+</ol>
+
+<hr  />
+
+<div class="warning">
+<p>
+Las cosas no siempre salen como uno espera. Nos hemos topado con el
+primer <b>dolor de cabeza</b>. El primero de <b>muchos</b>. El problema es: iOS
+ignora el parámetro de tiempo y su vibración siempre tiene una
+duración prdefinida.  Las demás plataformas se comportan
+correctamente. ¡Da gracias de que esto solo sea un taller!
+</p>
+
+</div>
+</div>
+</div>
+<div id="outline-container-sec-2-3" class="outline-3">
+<h3 id="sec-2-3"><span class="section-number-3">2.3</span> Poder no. 2: <i>Audio</i> <code>(org.apache.cordova.media)</code></h3>
+<div class="outline-text-3" id="text-2-3">
+</div><div id="outline-container-sec-2-3-1" class="outline-4">
+<h4 id="sec-2-3-1"><span class="section-number-4">2.3.1</span> Tic, tac</h4>
+<div class="outline-text-4" id="text-2-3-1">
+<ol class="org-ol">
+<li>Reproduce <b>tick.mp3</b> <a href="http://weekend-phonegap.redradix.com/tick.mp3">link de descarga</a>
+</li>
+<li>El interfaz es un poquito más complejo que antes
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">Método</th>
+<th scope="col" class="left">Qué hace</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">new Media(src, mediaSuccess, mediaError, mediaStatus)</td>
+<td class="left">carga un nuevo fich. de audio</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">media.play()</td>
+<td class="left">reproduce el fichero</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">media.pause()</td>
+<td class="left">pausa la reproducción</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">media.stop()</td>
+<td class="left">para la reprodución</td>
+</tr>
+</tbody>
+<tbody>
+<tr>
+<td class="left">muchos más&#x2026;</td>
+<td class="left">¡lee la documentación!</td>
+</tr>
+</tbody>
+</table>
+</li>
+
+<li>Añade sonido a nuestro reloj.
+
+<div class="org-src-container">
+
+<pre class="src src-js"><span style="color: #F0DFAF; font-weight: bold;">var</span> <span style="color: #DFAF8F;">path</span> = window.location.pathname.slice(0, -10),
+    tick = <span style="color: #F0DFAF; font-weight: bold;">new</span> <span style="color: #7CB8BB;">Media</span>(path + <span style="color: #CC9393;">"tick.mp3"</span>);
+</pre>
+</div>
+</li>
+</ol>
+
+
+<hr  />
+</div>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3" class="outline-2">
+<h2 id="sec-3"><span class="section-number-2">3</span> Más chicha: cámara y GPS</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+Vamos a programar una aplicacíon que utilice la cámra y geoetiquete las fotos.
+</p>
+
+<ol class="org-ol">
+<li>Crea un nuevo proyecto Phonegap que se llame <code>FotosBuenas</code>
+</li>
+<li>Aquí tenéis la maqueta: <a href="http://weekend-phonegap.redradix.com/fotosbuenas.zip">link de descarga</a>
+</li>
+<li>Móntalo y vacía el código de <code>index.js</code>
+</li>
+</ol>
+
+<hr  />
+
+<p>
+En el HTML tenéis la plantilla. La idea es simple:
+</p>
+
+<ol class="org-ol">
+<li>El usuario toca el botón de hacer una foto.
+</li>
+<li>Hace una foto.
+</li>
+<li>Se piden las coordenadas al GPS.
+</li>
+<li>Convertimos las coordenadas en una dirección.
+</li>
+<li>Se rellena el template con la foto, la fecha y la dirección.
+</li>
+<li>Se añade a <code>.js-box-container</code>
+</li>
+</ol>
+</div>
+
+<div id="outline-container-sec-3-1" class="outline-3">
+<h3 id="sec-3-1"><span class="section-number-3">3.1</span> ¡Necesitamos nuevos poderes! <i>Camera</i> <code>(org.apache.cordova.camera)</code></h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+El interfaz es más compleo, con <b>un montón</b> de opciones. Pero la
+llamada fundamental es:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">navigator.camera.getPicture(successFn, errorFn, [ options ]);
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">opción</th>
+<th scope="col" class="left">valor</th>
+<th scope="col" class="left">descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">quality</td>
+<td class="left">0..100</td>
+<td class="left">calidad aproximada de la imagen</td>
+</tr>
+
+<tr>
+<td class="left">sourceType</td>
+<td class="left">Camera.PictureSourceType.CAMERA</td>
+<td class="left">hacer una foto</td>
+</tr>
+
+<tr>
+<td class="left">sourceType</td>
+<td class="left">Camera.PictureSourceType.PHOTOLIBRARY</td>
+<td class="left">elegir una imagen</td>
+</tr>
+
+<tr>
+<td class="left">sourceType</td>
+<td class="left">Camera.PictureSourceType.SAVEDPHOTOALBUM</td>
+<td class="left">elegir una imagen</td>
+</tr>
+
+<tr>
+<td class="left">destinationType</td>
+<td class="left">Camera.DestionationType.DATA<sub>URL</sub></td>
+<td class="left">la imagen como un string base64</td>
+</tr>
+
+<tr>
+<td class="left">destinationType</td>
+<td class="left">Camera.DestionationType.FILE<sub>URI</sub></td>
+<td class="left">la ruta al fichero de la imagen</td>
+</tr>
+
+<tr>
+<td class="left">destinationType</td>
+<td class="left">Camera.DestionationType.NATIVE<sub>URI</sub></td>
+<td class="left">la ruta (nativa) a la imagen</td>
+</tr>
+
+<tr>
+<td class="left">allowEdit</td>
+<td class="left">true / false</td>
+<td class="left">permitir edición antes de guardar</td>
+</tr>
+
+<tr>
+<td class="left">encodingType</td>
+<td class="left">Camera.EncodingType.JPEG</td>
+<td class="left">guardar como .jpg</td>
+</tr>
+
+<tr>
+<td class="left">encodingType</td>
+<td class="left">Camera.EncodingType.PNG</td>
+<td class="left">guardar como .png</td>
+</tr>
+
+<tr>
+<td class="left">targetWidth</td>
+<td class="left">number</td>
+<td class="left">ancho de la foto</td>
+</tr>
+
+<tr>
+<td class="left">targetHeight</td>
+<td class="left">number</td>
+<td class="left">alto de la foto</td>
+</tr>
+
+<tr>
+<td class="left">correctOrientation</td>
+<td class="left">true / false</td>
+<td class="left">corregir orientación</td>
+</tr>
+
+<tr>
+<td class="left">cameraDirection</td>
+<td class="left">Camera.Direction.FRONT</td>
+<td class="left">usar cámara frontal</td>
+</tr>
+
+<tr>
+<td class="left">cameraDirection</td>
+<td class="left">Camera.Direction.BACK</td>
+<td class="left">usar cámara dorsal</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+¡Pruébalo!
+</p>
+
+<ol class="org-ol">
+<li>Haz que el botón con la cámra sea "tocable" y haga una foto (almacenada en el teléfono).
+</li>
+<li>Rellena el template y añade la caja al contenedor.
+</li>
+</ol>
+
+<hr  />
+</div>
+</div>
+<div id="outline-container-sec-3-2" class="outline-3">
+<h3 id="sec-3-2"><span class="section-number-3">3.2</span> <i>GPS</i> <code>(org.apache.cordova.geolocation)</code></h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+El interfaz de geolocalización es exactamente igual al de HTML5.
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">navigator.geolocation.getCurrentPosition(okFn, errFn, options)
+</pre>
+</div>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="left" />
+
+<col  class="left" />
+
+<col  class="left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="left">opción</th>
+<th scope="col" class="left">valor</th>
+<th scope="col" class="left">significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="left">enableHighAccuracy</td>
+<td class="left">true / false</td>
+<td class="left">aconsejar el uso de los sensores más precisos</td>
+</tr>
+
+<tr>
+<td class="left">timeout</td>
+<td class="left"># ms</td>
+<td class="left">timeout antes de fallar</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Y el resultado es un objeto con esta estructura:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js"><span style="color: #F0DFAF; font-weight: bold;">var</span> <span style="color: #DFAF8F;">location</span> = {
+  coords: {
+    latitude: ...,
+    longitude: ...,
+    altitude: ...,
+    accuracy: ...,
+    altitudeAccuracy: ...,
+    heading: ...,
+    speed: ...
+  },
+  timestamp: ...
+}
+</pre>
+</div>
+
+<p>
+Ahora ya sabemos suficiente magia para geotaguear nuestras fotos.
+</p>
+
+<ol class="org-ol">
+<li>Instala el plugin.
+</li>
+<li>Antes de mostrar la imagen, pide la posición.
+</li>
+<li>Inserta la latitud/longitud en el pie de la imagen.
+</li>
+</ol>
+
+<hr  />
+</div>
+
+<div id="outline-container-sec-3-2-1" class="outline-4">
+<h4 id="sec-3-2-1"><span class="section-number-4">3.2.1</span> Latitud y longitud son para las máquinas y los marineros.</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+Nosotros queremos direcciones de verdad, no coordendas. Por userte,
+hay varios servicios onlinse que nos facilitan el geocoding
+inverso. Así que, ¡Vamos a hablar con el mundo de ahí fuera!
+</p>
+
+<dl class="org-dl">
+<dt> Hablando REST </dt><dd>                  Usando la API de Google Geocoding, podemos convertir
+coordenadas en una dirección con esta petición:
+
+<div class="org-src-container">
+
+<pre class="src src-url">https://maps.googleapis.com/maps/api/geocode/json?latlng=40.714224,-73.961452&amp;sensor=true
+</pre>
+</div>
+
+<p>
+Que nos devuelve algo como esto:
+</p>
+
+<div class="org-src-container">
+
+<pre class="src src-js">{
+   <span style="color: #CC9393;">"results"</span> : [
+      {
+        <span style="color: #CC9393;">"formatted_address"</span>: <span style="color: #CC9393;">"Calle Paz 4, Madrid, Spain"</span>,
+        <span style="color: #5F7F5F;">// </span><span style="color: #7F9F7F;">y un mont&#243;n de cosas m&#225;s que no nos interesan</span>
+      }
+  ]
+}
+</pre>
+</div>
+
+<ol class="org-ol">
+<li>Con las coordenadas que tenemos&#x2026;
+</li>
+<li>Conviértelas en una dirección y
+</li>
+<li>Rellena <code>p.js-location</code> en el template.
+</li>
+</ol>
+</dd>
+
+<dt> Pero&#x2026; ¿Funciona? </dt><dd>     No. Por defecto, Phonegap deniega cualquier comunicación con el
+exterior. Así que no te puedes conectar a Google. Es fácil de
+arreglar:
+
+<ol class="org-ol">
+<li>Edita <code>config.xml</code> y añade una nueva regla de acceso con el dominio del servicio
+</li>
+<li>Inténtalo otra vez!
+</li>
+</ol>
+</dd>
+</dl>
+
+<hr  />
+</div>
+</div>
+</div>
+<div id="outline-container-sec-3-3" class="outline-3">
+<h3 id="sec-3-3"><span class="section-number-3">3.3</span> Hasta aquí hemos llegado.</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+Tenemos nuestra aplicacíon funcionando. ¡Enhorabuena! ¿Quieres seguir añadiendo cosas?
+Una buena mejora sería añadirle persistencia para que no se pierdan las fotos al cerrar y volver
+a abrir la aplicación. Tienes varias alternativas:
+</p>
+
+
+<ul class="org-ul">
+<li>localStorage
+</li>
+<li>Web SQL
+</li>
+<li>sqlite plugin (para los valientes)
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="outline-container-sec-4" class="outline-2">
+<h2 id="sec-4"><span class="section-number-2">4</span> ¡Gracias!</h2>
+<div class="outline-text-2" id="text-4">
+<p>
+Y no os olvidéis de pasar por <a href="http://redradix.com">http://redradix.com</a> y aputaros a la lista de correo
+si todavía no lo habéis hecho.
+</p>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
